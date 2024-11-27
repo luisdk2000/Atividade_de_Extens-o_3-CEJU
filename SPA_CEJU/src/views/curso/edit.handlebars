@@ -1,0 +1,43 @@
+{{!-- Seção de conteúdo da página --}}
+<div class="container mt-4 w-80">
+    <h1 class="mb-4">Editar Curso</h1>
+    <form id="editCursoForm" enctype="multipart/form-data" method="post">
+        <div class="form-group mb-3">
+            <label for="editTitulo">Título</label>
+            <input type="text" class="form-control" id="editTitulo" name="titulo" value="{{curso.titulo}}" required>
+        </div>
+        
+        <div class="form-group mb-3">
+            <label for="editConteudo">Conteúdo</label>
+            <textarea class="form-control" id="editConteudo" name="conteudo" rows="5" required>{{curso.conteudo}}</textarea>
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="editImagemPrincipal">Imagem Principal</label>
+            <input type="file" class="form-control-file" id="editImagemPrincipal" name="imagem_principal">
+            <small class="form-text text-muted">Deixe em branco para manter a imagem atual.</small>
+            <!-- Preview of current main image -->
+            <img src="http://localhost:3000/img/publicacoes/{{curso.imagem_principal}}" class="img-thumbnail mt-2" alt="Imagem Principal">
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="editImagensInternas">Imagens Internas</label>
+            <input type="file" class="form-control-file" id="editImagensInternas" name="imagens_internas" multiple>
+            <small class="form-text text-muted">Deixe em branco para manter as imagens atuais.</small>
+            <!-- Previews of current internal images -->
+            <div class="mt-2">
+                {{#each curso.imagens_internas}}
+                <img src="http://localhost:3000/img/cursos/{{this}}" class="img-thumbnail mr-2 mb-2" alt="Imagem Interna" style="max-width: 150px;">
+                {{/each}}
+            </div>
+        </div>
+
+        <!-- Campo oculto para armazenar o ID da publicacao -->
+        <input type="hidden" id="editCursoId" name="id" value="{{curso.id}}">
+        <a href="../cursos/" class="btn btn-secondary" id="cancelEditCurso"><i class="bi bi-x-circle"></i> Cancelar</a>
+        <button type="button" class="btn btn-primary" id="saveEditCurso" onclick="UpdateCursoClick(event)"><i class="bi bi-check-circle"></i> Salvar</button>
+    </form>
+</div>
+
+<!-- Scripts do formulário publicacao -->
+<script src="../js/cursoScripts.js"></script>

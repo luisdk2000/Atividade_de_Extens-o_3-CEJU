@@ -1,0 +1,195 @@
+/*Variáveis*/
+:root {
+    --branco: #ffffff;
+    --preto: #000000;
+    --cinza-escuro: #222c34;
+    --cinza-medio: #545454;
+    --cinza-claro: #ced4da;
+    --azul-claro: #5b6fc6;
+    --amarelo-claro: #e1c079;
+    --vermelho-claro: #b04630;
+    --azul: #030B9E;
+    --amarelo: #ffff00;
+    --vermelho: #ff0000;
+    --verde: #49c32c;
+  }
+
+
+/* Estilo para o overlay do modal */
+.modal.show {
+  background-color:  rgba(0, 0, 0, 0.5);
+}
+
+body{
+  background-color: #FFFAEE;
+}
+/* definindo variáveis para cores */
+/* sobrescrevendo classes padrão do Bootstrap */
+/* a marcação !important dá um peso maior a regra, sobrescrevendo regras prévias */
+
+/*
+:root{
+  --primary: #026E81;
+  --secondary: #00ABBD;
+  --success: #0099DD;
+  --info: #A1C7E0;
+  --warning: #FF9933;
+  --danger: #E3371E;
+  --white: #FFF;
+}*/
+
+/*Dark mode*/
+:root{
+  --primary: #313866;
+  --secondary: #00ABBD;
+  --success: #964EC2;
+  --info: #A1C7E0;
+  --warning: #00ABBD;
+  --danger: #313866;
+  --white: #FFF;
+}
+
+section {
+  margin-bottom: 3rem; /* Ajuste o valor conforme necessário */
+}
+
+.bg-primary, .btn-primary{
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+.bg-secondary, .btn-secondary{
+  background-color: var(--secondary) !important;
+  border-color: var(--secondary) !important;
+}
+
+.bg-success, .btn-success{
+  background-color: var(--success) !important;
+  border-color: var(--success) !important;
+}
+.bg-info, .btn-info{
+  background-color: var(--info) !important;
+  border-color: var(--info) !important;
+}
+.bg-warning, .btn-warning{
+  background-color: var(--warning) !important;
+  border-color: var(--warning) !important;
+}
+.bg-danger, .btn-danger{
+  background-color: var(--danger) !important;
+  border-color: var(--danger) !important;
+}
+
+.nav-link {
+  color: var(--white) !important ;
+}
+.nav-link:hover{
+  color: var(--warning) !important ; 
+}
+
+/* Estilização geral da seção */
+#perguntas {
+  background-color: #FFFAEE; /* Fundo da seção */
+  padding: 40px 0; /* Padding superior e inferior */
+}
+
+/* Título da seção */
+#perguntas h2 {
+  color: #2F4054; /* Cor do texto */
+  font-size: 2.5rem; /* Tamanho da fonte */
+  margin-bottom: 30px; /* Margem inferior */
+}
+
+/* Estilo do acordeão */
+.accordion-item {
+  border: 1px solid #B9862F; /* Borda dos itens do acordeão */
+  border-radius: 5px; /* Bordas arredondadas */
+  margin-bottom: 15px; /* Margem inferior entre os itens */
+}
+
+.accordion-header {
+  background-color: #B9862F; /* Fundo do cabeçalho do acordeão */
+}
+
+.accordion-button {
+  color: #FFFFFF ; /* Cor do texto do botão */
+  font-weight: bold; /* Texto em negrito */
+  background-color: transparent; /* Fundo transparente */
+  border: none; /* Sem borda */
+  padding: 15px; /* Padding interno */
+  text-align: left; /* Alinhamento do texto */
+}
+
+.accordion-button:focus {
+  box-shadow: none; /* Remove o foco padrão */
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #2F4054; /* Fundo quando expandido */
+  color: #FFFAEE; /* Cor do texto quando expandido */
+}
+
+.accordion-body {
+  background-color: #FFFFFF; /* Fundo do corpo do acordeão */
+  color: #2F4054; /* Cor do texto */
+  padding: 20px; /* Padding interno */
+}
+
+#sobre {
+  background-color: #FFFAEE; /* Fundo da seção sobre nós */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito de profundidade */
+  padding: 20px; /* Espaçamento interno */
+}
+
+#produtos {
+  background-color: #212529; /* Fundo da seção de produtos */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito de profundidade */
+  padding: 20px; /* Espaçamento interno */
+}
+.product-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Permite que o layout se ajuste em telas menores */
+}
+
+.product-content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product-content img {
+  max-width: 30%;
+  height: auto;
+  margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.product-text {
+  max-width: 65%; /* Ajusta a largura do texto */
+  coloR:var(--white);
+}
+
+.product-text h3 {
+  margin-top: 0; /* Remove a margem superior do título */
+  coloR:var(--white);
+}
+
+.product-text p {
+  text-align: justify; /* Justifica o texto */
+  coloR:var(--white);
+}
+
+.h3 {
+  color: #B9862F;
+}
+
+.text-center {
+  text-align: center; /* Centraliza o texto */
+}
+
+.product-text h3 {
+  margin-top: 0; /* Remove a margem superior do h3, se necessário conteiner */ 
+  margin-bottom: 1rem; /* Adiciona uma margem inferior para separar do texto */
+}

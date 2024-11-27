@@ -1,0 +1,25 @@
+<div class="container mt-4 w-80">
+    <h1 class="mb-4">Criar Faqs</h1>
+    <form id="createFaqForm" enctype="multipart/form-data" method="post">
+        <div class="form-group mb-3">
+            <label for="createTitulo">Título</label>
+            <input type="text" class="form-control" id="createTitulo" name="titulo" required>
+        </div>
+        <div class="form-group mb-3">
+            <label for="createResposta">Resposta</label>
+            <input type="text" class="form-control" id="createResposta" name="resposta" required>
+        </div>
+        <div class="form-group mb-2">
+            <label for="createOrdem">Ordem</label>
+            <input type="number" class="form-control" id="createOrdem" name="ordem" required>
+        </div>
+
+        <!-- Campo oculto para armazenar o ID da publicacao -->
+        <input type="hidden" id="createFaqId" name="id">
+        <a href="../faqs/" class="btn btn-secondary" id="cancelCreateFaq"><i class="bi bi-x-circle"></i> Cancelar</a>
+        <button type="button" class="btn btn-primary" id="saveCreateFaq" onclick="CreateFaqClick(event)"><i class="bi bi-check-circle"></i> Salvar</button>
+    </form>
+</div>
+
+<!-- Example of including the script -->
+<script src="../js/faqScripts.js"></script>

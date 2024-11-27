@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/*Variáveis*/
+:root {
+    --verde: #49c32c;
+    --azul: #0060b1;
+    --cinza-medio: #545454;
+    --azul-escuro: #222c34;
+    --branco: #ffffff;
+    --cinza-claro: #ced4da;
+  }
+
+/*Geral conteiner*/
+*{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    margin-bottom: 3rem; /* Ajuste o valor conforme necessário */
+}
+/*Menu*/
+
+.nav-link {
+    color: var(--cinza-medio);;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: var(--verde);;
+}
+
+#navbarNav a.btn{
+    text-transform: uppercase;
+    font-weight: 600;
+    background: var(--verde);;
+    border-color: var(--verde);;
+    border-radius: 0;
+}
+
+#navbarNav a.btn:hover{
+    background: var(--azul);;
+    border-color: var(--azul);;
+}
+
+/*Slider*/
+.carousel-control-prev-icon{
+    background-color: rgba(0, 0, 0, .5) ;
+    padding: 2rem 1rem;
+}
+
+
+.carousel-control-next-icon{
+    background-color: rgba(0, 0, 0, .5) ;
+    padding: 2rem 1rem;
+}
+
+.carousel-caption {
+    top: auto;
+    bottom: 4rem;
+    margin:0 auto;
+    background-color: rgba(0, 0, 0, .5) ;
+    width: 600px;
+}
+
+.carousel-caption h5, .carousel-caption p{
+    color: var(--branco);
+}
+
+.btn.btn-primary.azul{
+    background-color: var(--azul);;
+    border-color: var(--azul);;
+    border-radius: 0;
+}
+
+.btn.btn-primary.azul:hover{
+    background-color: var(--verde);;
+    border-color: var(--verde);;
+    border-radius: 0;
+}
+
+/*Cursos*/
+#cursos{
+    padding: 30px 30px;
+    background-color: var(--azul-escuro);;
+}
+
+#cursos h4{
+    text-align: center;
+    color:var(--branco);
+}
+
+.card{
+    border:0;
+    border-radius: 0;
+}
+
+.btn.btn-primary.verde{
+    background-color: var(--verde);;
+    border-color: var(--verde);;
+    border-radius: 0;
+}
+
+.btn.btn-primary.verde:hover{
+    background-color: var(--azul);
+    border-color: var(--azul);
+}
+
+/*Institucional*/
+
+#institucional{
+    padding: 30px 30px;
+    color:var(--azul-escuro);;
+}
+
+#institucional h3{
+    text-align: center;
+}
+
+
+
+/*Notícias*/
+#produtoss a{
+    color: var(--azul);;
+    text-decoration : none;
+}
+
+#produtos a:hover{
+    color: var(--verde);;
+}
+
+/*Eventos*/
+#servicos{
+padding-top: 1rem;
+border : 1px solid var(--cinza-claro);;
+border-top: 8px solid var(--verde);;
+
+}
+
+#servicos a{
+    color: var(--verde);;
+    text-decoration : none;
+}
+
+#servicos a:hover{
+    color: var(--azul);;
+}
+
+.data{
+    border: 3px solid var(--cinza-claro);;
+}
+
+.dia{  
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+h4{
+    font-weight: 600;
+}
+
+h5{
+    font-weight: 600;
+}
+
+/*Números*/
+#numeros{
+    padding: 30px 30px;
+    background-color: var(--azul-escuro);;
+    background-image: url("../img/paralax.jpg");
+    color: var(--branco);
+    text-align: center;
+}
+
+#numeros h4, #numeros i, #numeros .timer, #numeros p{
+    color : var(--branco);
+}
+
+.icone i {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    font-size: 60px;
+    padding: 10px;
+}
+
+.contador {
+    font-size: 35px;
+    line-height: 35px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.separador {
+    width: 10%;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.47);
+    margin: 15px auto;
+}
+
+.numero p {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 700;
+    margin: 0px;
+    text-transform: uppercase;
+}
+
+.paralax {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+}
+
+/*Entre em contato*/
+.borda-azul{
+    border-top: 7px solid var(--azul);;
+}
+
+/*Rodapé*/
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--azul-escuro);;
+    padding: 20px; /* Adiciona um espaçamento interno */
+}
+
+
+
+footer p a {
+	margin: 5px 15px;
+	color:var(--branco);;
+}
+
+footer i{
+    color: var(--cinza-claro);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+body {
+    background-color: #FFFAEE;
+}
+
+#navbar{
+    background-color: #FFFAEE;
+}
+
+.cinzel-default> {
+    font-family: "Cinzel", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+/* Estilo para a seção de contato */
+.Contato {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: right; /* Centraliza os itens horizontalmente */
+    gap: 15px; /* Espaço entre os itens */
+}
+
+/* Estilo para cada bloco de contato */
+#telefone, #email, #endereco {
+    display: flex;
+    align-items: center; /* Alinha o ícone e o texto verticalmente */
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para os ícones */
+#telefone img, #email img, #endereco img {
+    width: 24px; /* Tamanho padrão dos ícones */
+    height: 24px; /* Tamanho padrão dos ícones */
+    object-fit: contain; /* Garante que a imagem se ajuste ao tamanho */
+}
+
+/* Estilo para o texto de contato */
+#telefone p, #email p, #endereco p {
+    margin: 0; /* Remove margem padrão dos parágrafos */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+
+/* Estilo adicional opcional */
+
+
+footer a {
+    color: #007bff; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+.RedesSociais {
+    display: flex;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    align-items: right; /* Centraliza os itens horizontalmente */
+    gap: 15px; /* Espaço entre os itens */
+}
+
+/* Estilo para cada bloco de rede social */
+#facebook, #twitter, #instagram, #linkedin {
+    display: flex;
+    align-items: center; /* Alinha o ícone e o texto verticalmente */
+    gap: 10px; /* Espaço entre o ícone e o texto */
+    font-family: Arial, sans-serif; /* Fonte padrão */
+    color: #333; /* Cor do texto */
+}
+
+/* Estilo para os ícones */
+#facebook img, #twitter img, #instagram img, #linkedin img {
+    width: 24px; /* Tamanho padrão dos ícones */
+    height: 24px; /* Tamanho padrão dos ícones */
+    object-fit: contain; /* Garante que a imagem se ajuste ao tamanho */
+}
+
+/* Estilo para o texto de redes sociais */
+#facebook p, #twitter p, #instagram p, #linkedin p {
+    margin: 0; /* Remove margem padrão dos parágrafos */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+/* Estilo adicional opcional */
+footer a {
+    color: #007bff; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+footer p{
+    color:#d4cebe;
+}
+.carousel-container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .meio{
+    width: 100%;
+  }
+  .carousel {
+    display: flex;
+    transition: transform 1.5s ease;
+  }
+  
+  .slide {
+    min-width: 100%;
+    position: relative;
+  }
+  
+  .slide img {
+    width: 1500px;
+    max-height: 500px;
+    display: block;
+  }
+  
+  .caption {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 15px;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .slide:hover .caption {
+    opacity: 1;
+  }
+
+  .carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px; /* Defina a largura do fundo do botão */
+    height: 40px; /* Defina a altura do fundo do botão */
+    z-index: 2;
+}
+
+.carousel-control-prev {
+    left: 15px;
+}
+
+.carousel-control-next {
+    right: 15px;
+}
+
+.carousel-img {
+    height: 575px;
+    object-fit: cover;
+}
+
+
+/* CSS: Ajuste do posicionamento e transições */
+.dropdown-menu {
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    margin-top: 0;
+}
+
+.dropdown:hover .dropdown-menu,
+.dropdown-menu:hover {
+    opacity: 1;
+    visibility: visible;
+    display: block;
+    margin-top: 0; /* Remove espaço entre item principal e submenu */
+}
+
+.navbar .dropdown-menu {
+    margin-top: 0; /* Remove qualquer espaço adicional */
+    top: 100%; /* Garante que o submenu começa logo abaixo do item principal */
+}
+
+
+.product-card {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.product-card img {
+    width: 100%; /* Faz com que a imagem ocupe toda a largura do contêiner */
+    height: 350px; /* Altura fixa, ajuste conforme necessário */
+    object-fit: cover; /* Mantém a proporção da imagem, cortando o excesso se necessário */
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+}
+
+.product-info {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.product-info h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.product-card:hover .product-info {
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.btn-outline-light {
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-light:hover {
+    background: #fff;
+    color: #000;
+}
+.btn-outline-dark {
+    border: 2px solid #000; /* Borda preta */
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease;
+    color: #000; /* Texto preto */
+}
+.btn-outline-dark:hover {
+    background: #000; /* Fundo preto no hover */
+    color: #fff; /* Texto branco no hover */
+}
+
+.btn-outline-dark i {
+    margin-left: 10px;
+}
+
+.btn-outline-light i {
+    margin-left: 10px;
+}
+
+
+
+
+#publicacoes {
+    
+}
+
+.publication-link p {
+    margin: 0;
+    color: #7d7d7d;
+}
+
+.publication-link a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.publication-link a:hover {
+    color: #ff6600; /* Cor de destaque ao passar o mouse */
+}
+
+.publication-link i {
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+.responsive-map {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px; /* Optional: Add some rounded corners */
+}
+
+.responsive-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Estilo para a seção de trabalhos */
+#trabalhos {
+    padding: 20px;
+}
+
+/* Estilo para o card do trabalho */
+.card {
+    border: 1px solid var(--cinza-claro);
+    border-radius: 0;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+/* Imagem principal do trabalho */
+.card img.rounded-start {
+    width: 100%;
+    height: auto;
+}
+
+/* Imagens secundárias em linha */
+.secundarias {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px 0;
+}
+
+.secundarias img {
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid var(--cinza-claro);
+}
+
+/* Estilo para o carrossel de imagens internas */
+.carousel-inner img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Estilo para os controles do carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    z-index: 2;
+}
+
+.carousel-control-prev {
+    left: 15px;
+}
+
+.carousel-control-next {
+    right: 15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 20px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, .5);
+    padding: 2rem 1rem;
+}

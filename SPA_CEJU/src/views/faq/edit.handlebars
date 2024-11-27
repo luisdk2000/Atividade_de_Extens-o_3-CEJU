@@ -1,0 +1,30 @@
+{{!-- edit.handlebars --}}
+
+{{!-- Seção de conteúdo da página --}}
+<div class="container mt-4 w-80">
+    <h1 class="mb-4">Editar Faq</h1>
+    <form id="editFaqForm" enctype="multipart/form-data" method="post">
+    <div class="form-group mb-3">
+        <label for="editTitulo">Título</label>
+        <input type="text" class="form-control" id="editTitulo" name="titulo" value="{{faq.titulo}}" required>
+    </div>
+    <div class="form-group mb-3">
+        <label for="editResposta">Resposta</label>
+        <input type="text" class="form-control" id="editResposta" name="resposta" value="{{faq.resposta}}" required>
+    </div>
+    <div class="form-group mb-2">
+        <label for="editOrdem">Ordem</label>
+        <input type="number" class="form-control" id="editOrdem" name="ordem" value="{{faq.ordem}}" required>
+    </div>
+
+    <input type="hidden" id="editFaqId" name="id" value="{{faq.id}}">
+    <a href="../faqs/" class="btn btn-secondary" id="cancelEditFaq"><i class="bi bi-x-circle"></i> Cancelar</a>
+    <button type="button" class="btn btn-primary" id="saveEditFaq" onclick="UpdateFaqClick(event)"><i
+            class="bi bi-check-circle"></i> Salvar</button>
+</form>
+
+</div>
+
+
+<!-- Scripts do formulário noticia -->
+<script src="../js/faqScripts.js"></script>

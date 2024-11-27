@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS  title-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- JS personalizado -->
+    <script src="../js/script.js"></script>
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/site_styles.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../img/favicon.png">
+</head>
+
+<body>
+   <header id="home">
+        <nav id="navbar">
+            <div id="navbar-logo">
+                <img src="img/Logo_500x500(CEJU).png" alt="logo doCEJU" id="nav-logo">
+            </div>
+            <div id="nav-pages">
+                <ul id="nav-list">
+                    <li class="nav-item active">
+                        <a href="/">Início</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="/lista-cursos">Cursos</a>
+                    </li>
+                        <li class="nav-item">
+                                <a href="/lista-noticias">Noticias</a>
+                        </li>
+                    <li class="nav-item">
+                        <a href="/#contato">Contato</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#">Mais</a>
+                        <ul class="dropdown-menu">
+                             <li class="nav-item">
+                                <a href="/localhost:moodle/my/">Ensino</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/lista-sobre_nos">Sobre Nós</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/lista-faqs">Perguntas Frequentes - FAQ</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <button id="mobile-btn">
+				<i class="fa-solid fa-bars"></i>
+			</button>
+        </nav>
+        <div id="mobile-menu">
+            <ul id="mobile-nav-list">
+                <li class="nav-item">
+                    <a href="/">Início</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/lista-cursos">Cursos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/lista-noticias">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/#contact">Contato</a>
+                </li>
+                <li class="nav-item">
+                                <a href="/localhost:moodle/my/">Ensino</a>
+                            </li>
+                <li class="nav-item">
+                    <a href="/lista-sobre_nos">Sobre Nós</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/lista-faqs">Perguntas Frequentes - FAQ</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <!-- Banner-->
+    <section class="carousel-container">
+        <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                {{#each banners}}
+                <button type="button" data-bs-target="#carouselExampleInterval" data-bs-slide-to="{{@index}}" {{#if
+                    active}} class="active" aria-current="true" {{/if}} aria-label="Slide{{ordem}}"></button>
+                {{/each}}
+            </div>
+            <div class="carousel-inner">
+                {{#each banners}}
+                <div class="carousel-item {{#if active}}active{{/if}}" data-bs-interval="3000">
+                    <img src="http://localhost:3000/img/banners/{{imagem}}" class="d-block w-100 carousel-img">
+                </div>
+                {{/each}}
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Texto -->
+    <section id="institucional" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-8 text-center">
+                    <h2>Bem-Vindo ao CEJU</h2>
+                    <p>O Centro da Juventude CEJU é um espaço dedicado ao desenvolvimento 
+                        e capacitação de jovens, oferecendo cursos profissionalizantes que 
+                        preparam para o mercado de trabalho. Com foco em inclusão e oportunidades, 
+                        o CEJU promove formação prática e teórica em diversas áreas, contribuindo 
+                        para o crescimento pessoal e profissional dos participantes. Aqui, a 
+                        juventude encontra apoio, conhecimento e ferramentas para construir um futuro melhor.</p>
+                    <a href="#contato" class="btn btn-primary">Entre em Contato</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Produtos e Serviços -->
+    <section id="produtos" class="py-5 bg-dark text-light" class="py-5 mb-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Boa estrutura</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="product-card position-relative">
+                        <img src="img/sala_pc.jpg" class="img-fluid" alt="Cortinas">
+                        <div class="product-info position-absolute">
+                            <h3>Cortinas</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="product-card position-relative">
+                        <img src="img/sala_empreendedor.jpg" class="img-fluid" alt="Persianas">
+                        <div class="product-info position-absolute">
+                            <h3>Exelentes Professores</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="product-card position-relative">
+                        <img src="img/sala_emocoes.jpg" class="img-fluid" alt="Decorações">
+                        <div class="product-info position-absolute">
+                            <h3>Ambiente Divertido</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Nossos Trabalhos -->
+<section id="nossosTrabalhos" class="py-5 bg-dark text-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Nossos Trabalhos</h2>
+        <div class="row">
+            {{#each noticias}}
+            <div class="col-md-4 mb-4">
+                <div class="product-card position-relative">
+                    <img src="http://localhost:3000/img/noticias/{{imagem_principal}}" class="img-fluid" alt="Cortinas">
+                    <div class="product-info position-absolute">
+                        <h3>{{titulo}}</h3>
+                    </div>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+        <div class="text-center">
+            <a href="/lista-noticias" class="btn btn-outline-dark mt-4">Confira mais noticias 
+                <i class="bi bi-arrow-right"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+    <!-- Contato -->
+    <section id="contato" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Entre em contato conosco</h4>
+                    <form id="formSendMessage">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite seu Nome">
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">E-mail</label>
+                            <input type="email" name="email" class="form-control" id="email"
+                                placeholder="Digite seu E-mail">
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input type="text" name="telefone" class="form-control" id="telefone"
+                                placeholder="Digite seu Telefone">
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea name="mensagem" class="form-control" id="mensagem" rows="4"
+                                placeholder="Digite sua mensagem"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h4>Nosso endereço</h4>
+                    <p><i class="bi bi-geo-alt-fill"></i> 12 de Setembro, N.º 892, Bairro Centro</p>
+                    <p><i class="bi bi-telephone-fill"></i> (47) 3460-0689</p>
+                    <p><i class="bi bi-clock-fill"></i> Seg - Sex: 08:00 - 18:00 | Sabado: 08:30 - 13:00</p>
+                    <div class="responsive-map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3580.421458926791!2d-50.39593412377195!3d-26.182964877089617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94e7127cf5332cb7%3A0xbfa0652bf11c838e!2sR.%2012%20de%20Setembro%2C%20892%20-%20Centro%2C%20Canoinhas%20-%20SC%2C%2089460-138!5e0!3m2!1spt-BR!2sbr!4v1719423350074!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-dark text-light" id="rodape">
+        <div class="container p-4">
+            <div class="row">
+                <!-- Social Media -->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Nos siga nas Redes Sociais</h5>
+                    <ul class="list-unstyled d-flex justify-content-around">
+                        <li><a href="#" class="text-dark"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#" class="text-dark"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="text-center p-3">
+                    © 2024 CEJUSite.. Todos os direitos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>

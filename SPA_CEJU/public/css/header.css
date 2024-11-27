@@ -1,0 +1,132 @@
+header{
+    background-color: #FFFAEE;
+    width: 100%;
+    padding: 28px 8%;
+}
+
+#navbar{
+    width: 100%;
+}
+
+#navbar-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 1%;
+}
+#nav-logo{
+    height: 12vh;
+}
+
+
+#nav-list{
+    display: flex;
+    list-style: none;
+    gap: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.3rem;
+    
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #1d1d1dad;
+    font-weight: 600;
+
+}
+
+
+.nav-item a:hover{
+    border-bottom: 3px solid goldenrod;
+    transition: 0.1s ease-in-out;
+}
+
+.nav-item.active a{
+    color: #3a3a3a;
+    border-bottom: 3px solid goldenrod;
+    
+}
+
+.dropdown-menu{
+    position: absolute;
+    display: none;
+    background-color: #d4cebe; 
+    border-radius: 5%;
+    padding: 10px;
+    margin-top: 10px;
+    line-height: 2em;
+}
+
+.dropdown-menu a{
+    display: block;
+}
+
+.dropdown:hover{
+    .dropdown-menu{
+        display: block;
+    }
+}
+
+#mobile-btn{
+    display: none;
+}
+#mobile-menu{
+    display: none;
+    background-color: #d4cebe; 
+    border-radius: 5%;
+    width: fit-content;
+    padding: 0px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    z-index: 2000;
+    left: 10%; /* Center horizontally */
+    right: 10%; /* Center horizontally */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+}
+
+@media screen and (max-width: 1170px){
+    #navbar{
+        justify-content: space-between;
+        display: flex;
+    }
+    #nav-logo{
+        height: 100%;
+        width: 75vw;
+    }
+
+    #nav-pages{
+        display: none;
+    }
+    #mobile-btn{
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 150%;
+        cursor: pointer;
+        color: #3a3a3a;
+    }
+
+    #mobile-menu.active{
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    #mobile-nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin: 18px auto;
+        line-height: 1.4;
+        padding-left: 0;
+    }
+
+    #mobile-nav-list .nav-item{
+        list-style: none;
+        text-align: center;
+    }
+}
