@@ -142,7 +142,7 @@ section {
 }
 
 #produtos {
-  background-color: #212529; /* Fundo da seção de produtos */
+  background-color: #d1d1d1; /* Fundo da seção de produtos */
   border-radius: 8px; /* Bordas arredondadas */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito de profundidade */
   padding: 20px; /* Espaçamento interno */
